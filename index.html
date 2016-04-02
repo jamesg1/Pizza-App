@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Order Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Pizza Clicker</h2>
+                <p>Please select a pizza from the list below and click on the Image to order:</p>
+                <ul id="pizza-list" class="nav nav-pills nav-stacked">
+                </ul>
+                <div id="pizza">
+                    <h2 id="pizza-name"></h2>
+                    <h4>Orders: <div id="pizza-order"></div></h4>
+                    <img id="pizza-img" src="" alt="pizza photo" />
+                </div>
+                <button id="admin-button" class="btn btn-primary">Admin</button>
+                <div id="admin">
+                    <form id="admin-form" class="form-vertical">
+                        <div class="form-group">
+                            <label for="pizza-name-input">Pizza Name</label>
+                            <input type="text" class="form-control" id="pizza-name-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-order-input">Pizza Orders</label>
+                            <input type="number" class="form-control" id="pizza-order-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="pizza-imgsrc-input">Pizza Image</label>
+                            <input type="text" class="form-control" id="pizza-imgsrc-input">
+                        </div>
+                    </form>
+                    <button id="cancel-button" class="btn btn-default">Cancel</button>
+                    <button id="save-button" class="btn btn-primary pull-right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
